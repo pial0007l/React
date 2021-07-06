@@ -52,8 +52,6 @@ const ExpenseForm =()=>{
             ammount: enteredAmmount,
             date: new Date(enteredDate)
         }
-
-        console.log(expenseData);
     };
 
     return <form onSubmit = {submitHandler}>
