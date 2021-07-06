@@ -25,7 +25,7 @@ function App() {
   ];
   return (
     <div>
-      <NewExpenses/>   
+      <NewExpense/>   
       <Expenses expenses = {expenses}/>
     </div>
   );
