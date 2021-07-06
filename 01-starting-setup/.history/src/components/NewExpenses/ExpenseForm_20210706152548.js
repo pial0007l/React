@@ -4,45 +4,31 @@ import './ExpenseForm.css';
 
 const ExpenseForm =()=>{
 
-    const [enteredTitle, setEnteredTitle] = useState('');
-    const [enteredAmmount, setEnteredAmmount] = useState('');
-    const [enteredDate, setEnteredDate] = useState('');
+    // const [enteredTitle, setEnteredTitle] = useState('');
+    // const [enteredAmmount, setEnteredAmmount] = useState('');
+    // const [enteredDate, setEnteredDate] = useState('');
 
-    // const [usetInput, setUserInput] = useState({
-    //     enteredTitle: '',
-    //     enteredAmmount: '',
-    //     enteredDate: ''
-    // });
+    const [usetInput, setUserInput] = useState({
+        enteredTitle: '',
+        enteredAmmount: '',
+        enteredDate: ''
+    });
 
 
     const titleChangeHandler = (event) =>{
-        setEnteredTitle(event.target.value);
-        // setUserInput((prevState)=>{
-        //     return {
-        //         ...usetInput,
-        //         enteredTitle: event.target.value
-        //     }
-        // });
+        //setEnteredTitle(event.target.value);
+        setUserInput({
+            ...usetInput,
+            enteredTitle: event.target.value
+        });
     }
 
     const ammountChangeHandler = (event) =>{
-        setEnteredAmmount(event.target.value);
-        // setUserInput((prevState)=>{
-        //     return {
-        //         ...usetInput,
-        //         enteredAmmount: event.target.value
-        //     }
-        // });
+        //setEnteredAmmount(event.target.value);
     }
 
     const dateChangeHandler = (event) =>{
-        setEnteredDate(event.target.value);
-        // setUserInput((prevState)=>{
-        //     return {
-        //         ...usetInput,
-        //         enteredDate: event.target.value
-        //     }
-        // });
+        //setEnteredDate(event.target.value);
     }
 
     return <form>
